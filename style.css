@@ -439,3 +439,154 @@ body {
 
 
 
+
+
+/* =================================================
+   MOBILE CINEMATIC VERSION (VARANASI STYLE)
+   DESKTOP UNTOUCHED
+   ================================================= */
+@media (max-width: 768px) {
+
+  /* ===== BACKGROUND IMAGE FIX ===== */
+  body {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* ===== HERO SECTION ===== */
+  .hero {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 45px;
+    text-align: center;
+  }
+
+  .left-content {
+    align-items: center;
+  }
+
+  .title {
+    font-size: 56px;
+  }
+
+  .hashtag {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .release-date {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .right-content {
+    margin-top: 10px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+    opacity: 0.75;
+  }
+
+  /* ===== COUNTDOWN ===== */
+  .countdown {
+    gap: 15px;
+  }
+
+  .box {
+    width: 78px;
+    height: 78px;
+  }
+
+  .box span {
+    font-size: 22px;
+  }
+
+  .box small {
+    font-size: 10px;
+  }
+
+  /* ===== MOVIE DETAILS (NO CARDS) ===== */
+  .movie-details {
+    padding: 80px 22px;
+  }
+
+  .details-text h2 {
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+
+  .details-text p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* ===== CAST & CREW – TEXT ONLY (NO CARDS) ===== */
+  .crew-grid {
+    display: block;
+  }
+
+  .crew-card {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 32px;
+    box-shadow: none;
+    transform: none !important;
+  }
+
+  .crew-card h3 {
+    color: #caa44d;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+
+  .crew-card p {
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    opacity: 0.85;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-inner {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footer-center h2 {
+    font-size: 24px;
+  }
+}
+
+/* =================================================
+   GOLD GLOW – HEADINGS (ALL DEVICES)
+   ================================================= */
+h2,
+.cast-crew h2,
+.details-text h2,
+.footer-center h2 {
+  text-shadow:
+    0 0 6px rgba(202,164,77,0.45),
+    0 0 14px rgba(202,164,77,0.25);
+}
+
+/* =================================================
+   BUTTON POPUP HOVER / TAP (SMOOTH)
+   ================================================= */
+.btn {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow:
+    0 0 18px rgba(255,255,255,0.8),
+    0 0 40px rgba(255,255,255,0.4);
+}
